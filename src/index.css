@@ -1,13 +1,156 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana"
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #d7cedd;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #5a37778a, #4f2e6b);
+    color: white;
+}
+
+header h1, p {
+    margin: 0;
+    padding: 2px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+
+main {
+    background-color: #d7cedd;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87.5vh
+}
+
+main > h2 {
+    margin-top: 0;
+}
+
+.main--container {
+    text-align: center;
+    border: 2px #50306c solid;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #d2bfdf;
+    width: 450px;
+    height: 300px;
+    background-image: URL("./photos/birds.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    color: #50306c;
+}
+
+.main--container h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+    .main--container h3 {
+        color: #846c98;
+        font-size: 13px;
+        margin-bottom: 55px;
+    }
+
+.main--button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    background-color: #50306c;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 590;
+    font-family: "Verdana";
+    cursor: pointer;
+}
+
+    .main--button:focus {
+        outline: none;
+    }
+
+    .main--button:active {
+        box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    }
+
+.main--info {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    font-size: 12px;
+}
+
+.main--info-timerIcon {
+    width:10px;
+    height:10px;
+}
+
+.question--container {
+    margin-top: 10%;
+    margin-left: 35%;
+    text-align: center;
+    border: 2px #50306c solid;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #d2bfdf;
+    width: 450px;
+    height: 300px;
+    color: #50306c;
+}
+
+.question{
+    margin-bottom: 15px;
+}
+
+.question--button {
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 6px;
+    background-color: #50306c;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 590;
+    font-family: "Verdana";
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+    .question--button:focus {
+        outline: none;
+    }
+
+    .question--button:active {
+        box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    }
+
+.question--info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    font-size: 12px;
+    color: #5e3f78;
 }
